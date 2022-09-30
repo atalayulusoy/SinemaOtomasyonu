@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Viavi - News, Magazine, Blog Script | Documentation">
+<meta name="author" content="Viavi Streaming Script">
+<title>Viavi Streaming Script | Documentation</title>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,800,700,300,500,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="wrapper"> 
+  
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand"> <a href="index.html"><strong>Viavi Streaming</strong></a> </li>
+      
+      <li><a href="#installation">Installation</a> </li>
+
+      <li><a href="#configuration">Site Configuration</a> </li>  
+
+      <li><a href="#mailconfig"> Mail Configuration</a> </li>
+
+      <li><a href="#socialconfig"> Social Login Configuration</a> </li>
+
+      <li><a href="#payment_conf"> Payment Configuration</a> </li>
+
+      <li><a href="#cronjob_conf"> Cronjob/Scheduled Configuration</a> </li>
+
+      <li><a href="#app_conf"> Android App Configuration</a> </li>
+ 
+      <li><a href="#files"> Files Structure</a> </li>
+       
+      <li><a href="#faq"> FAQ</a> </li>
+      
+      <li><a href="#license"> License</a> </li>
+
+      <li><a href="#support"> Support</a> </li>
+      
+    </ul>
+    <div class="copy-rights"> <span>Copyright © 2021 All Rights Reserved </div>
+  </div>
+  
+  <!-- Page content -->
+  <div id="page-content-wrapper">
+    <div class="content-header"> <a id="menu-toggle" href="#" class="btn btn-default"> <span class="fa fa-bars"></span> </a>
+      <h1 id="GettingStarted">Viavi Streaming Script | Documentation </h1>
+    </div>
+    <!-- Keep all page content within the page-content inset div! -->
+    <div class="page-content inset">
+    
+      <div id="installation">
+        <div class="row">
+          <div class="col-md-12">
+          	<h3>Installation</h3>
+          	<h4>Server Requirements</h4>
+            <p class="lead">Checking to ensure that your web host have the minimum requirements to run Viavi Streaming Script.</p>             
+	           
+              <ul style="font-size: 18px;">
+                <li>PHP &gt;= 7.4</li>
+                <li>BCMath PHP Extension</li>
+                <li>Ctype PHP Extension</li>
+                <li>Fileinfo PHP Extension</li>
+                <li>JSON PHP Extension</li>
+                <li>Mbstring PHP Extension</li>
+                <li>OpenSSL PHP Extension</li>
+                <li>PDO PHP Extension</li>
+                <li>Tokenizer PHP Extension</li>
+                <li>XML PHP Extension</li>
+                <li>Curl PHP Extension</li>
+              </ul>
+                      
+            
+            <h3>Unzip and Upload</h3>
+            <p class="lead">Extract the archive you have downloaded. Copy all files from <b>video_script</b> folder and upload to your server.</p>     
+
+            <p><b>Note:</b> Make sure .env and .htaccess extract properly. <b>If you did't know where is env file then please check <a href="#files">File Structure</a></p></b>
+            <p>&nbsp;</p>    
+
+            <h3>The following quick steps show how the installation progress. </h3>
+            <h3>Step 1</h3>
+            <p class="lead">Run your site or sub domain http://yoursite.com</p>
+            <b>Minimum Requirements</b> 
+            <p class="lead">You should now see the minimum system requirements checklist - If there are any issues with the checklist, you will need to fix that before you can proceed to the next step.</p><br/>
+            <img src="img/step1.png" width="850">
+
+            <h3>Step 2</h3>
+            <p class="lead">Verifying Purchase</p>
+            <blockquote>Where can I find my purchase code? <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-">please read this</a>.</blockquote>
+            <p class="lead">Here you have to enter your Envato username and Item Purchase code.Then click Verify.</p>
+
+            <img src="img/step2.png" width="850">
+
+            <h3>Step 3</h3>
+            <p class="lead">Database Configuration</p>     
+            <p class="lead">Enter your <strong>database host</strong>, <strong>database user</strong>, <strong>database password</strong> and <strong>database name</strong>.</p>             
+               
+            <img src="img/step3.png" width="850"><br/><br/>
+
+            <p class="lead">Then click Import, If everything goes well, you should see this page.</p>
+            <p class="lead">Database import step take sometime, So don't do anything when database import.</p>
+            <img src="img/step3_1.png" width="850">
+
+            <h3>Step 4</h3>
+            <p class="lead">Finish Installation</p>     
+            <p class="lead">Congratulations! Viavi Streaming Portal is successfully installed.</p>     
+            <img src="img/step4.png" width="850">
+
+            <p>&nbsp;</p> 
+            <h3>Admin Access</h3>
+             
+              <p class="lead">Go to http://yoursite.com/admin after successfully configuration</p>
+              <p class="lead">We created an admin account for you by default<br/><br/>
+                <b>Email:</b> admin@admin.com<br/>
+                <b>Pass:</b> admin
+              </p> 
+               
+            <p>&nbsp;</p>  
+               
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div id="configuration">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Site Configuration</h3> 
+      <p class="lead">To set the site name, logo etc. go to Admin > Settings > General Settings.</p>
+            
+            <strong>Main Configuration</strong>
+            <p>Following informations needed to be updated.</p>
+            <ul>
+          
+          <li>Site Logo - Pick a png logo.</li>
+          <li>Site Favicon - Favicons like site icon. Pick a png icon</li>
+          <li>Site name - Your site name and this is important for search engines</li>
+          <li>Site email - When you send email that email shown to user.</li>
+          <li>Site Description - Type some detail about your site.</li>        
+           
+          
+        </ul>
+            <strong>You can also configure Timezone, Language, Styling and etc in here. </strong>
+            
+          </div>
+        </div>
+      </div> 
+      <hr/>
+      <div id="mailconfig">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Mail Configuration</h3> 
+            <p class="lead">So if you want to enable mail sending. Please go to Admin > Settings > SMTP Email</p>
+       
+              <img src="img/email.png" width="950">
+              <p>&nbsp;</p>  
+              <p class="lead">If you have problem with mailing with this setup than please contact your provider with those variables and ask correct info. We recommended use your hosting SMTP email settings.</p>              
+               <strong style="font-size: 18px;">For Gmail SMTP setup settings</strong><p>&nbsp;</p>  
+              <p class="lead" style="font-size: 14px;">
+              <strong>SMTP username:</strong> Gmail email address <br>
+              <strong>SMTP password:</strong> Gmail password <br>
+              <strong>SMTP server address:</strong> smtp.gmail.com <br>
+              <strong>Gmail SMTP&nbsp;port (TLS):</strong>&nbsp;587 <br>
+              <strong>SMTP port (SSL):</strong> 465 <br>
+              <strong>SMTP TLS/SSL required:</strong> Select TLS or SSL                 
+              </p>          
+        <blockquote><p class="lead"><strong style="color: #F00">NOTE:</strong> You have to set less secure apps access your account enable and 2 factor authentication off Less secure apps - Google Account please go through this <a target="_blank" href="https://myaccount.google.com/intro/security">Link</a></p></blockquote>   
+
+              <img src="img/2_step_verification.png" class="img" width="950">
+              <img src="img/less_secure.png" class="img" width="950">
+
+          </div>
+        </div>
+      </div>  
+      <hr/>
+      <div id="socialconfig">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Social Login Configuration</h3> 
+            <p class="lead">So if you want to enable social login. Please go to Admin > Settings > Social Login</p>
+
+            <b style="font-size: 18px;">Create Google App</b><br/><br/>
+            <p class="lead">In this step we need google client id and secret that way we can get information of other user. so if you don't have google app account then you can create from here : <a href="http://console.developers.google.com/" target="_blank">Google Developers Console</a>. you can find bellow screen :</p><br/>
+
+            <img src="img/social/laravel-login-google-1.png" width="950">  <br><br>
+
+            <p class="lead">Now you have to click on <b style="color: red;">Credentials</b> and choose first option <b style="color: red;">oAuth</b> and click Create new <b style="color: red;">Client ID</b> button. now you can see following slide:</p>
+
+            <img src="img/social/laravel-login-google-2.png" width="950">
+            <img src="img/social/laravel-login-google-3.png" width="950"><br><br>
+
+            <p class="lead"><b>Set Authorized redirect URL: http://yourdomainname.com/auth/google/callback</b></p><br>
+
+            <img src="img/social/laravel-login-google-4.png" width="950"><br><br>
+
+            <p class="lead">after create account you can copy client id and secret.Now you have to set <b style="color: red;">Client ID</b> and <b style="color: red;">Secret</b> in admin</p>
+
+            <img src="img/social/laravel-login-google-5.png" width="850"><br><br><br><br>
+
+            <b style="font-size: 18px;">Create Facebook App</b><br/><br/>
+            <p class="lead">Open a new tab in your browser and go to <a href="https://developers.facebook.com" target="_blank">https://developers.facebook.com</a>. Now enter the login details and click on get started option which you can find in the navigation bar. A popup box will appear as shown below.</p>
+
+            <img src="img/social/laravel-login-fb-1.png" width="850"><br/><br/>
+
+            <p class="lead">Now Click on create the first app custom Facebook login button to get started.</p>
+
+            <img src="img/social/laravel-login-fb-2.png" width="850"><br/><br/>
+
+            <p class="lead">Now it will ask to enter the display name for your App. Enter a display name and your contact email. Now click on create App ID. you will now end up with the Facebook developer dashboard.</p>
+
+            <img src="img/social/laravel-login-fb-3.png" width="850"><br/><br/>
+
+            <p class="lead">Now click on <b style="color: red;">Facebook login</b> card to setup. It will ask you the login options to generate.</p>
+
+            <img src="img/social/laravel-login-fb-4.png" width="850"><br/><br/>
+
+            <p class="lead">we will be using the web option. Now click on the web and it will ask you to fill the basics information</p>
+
+            <img src="img/social/laravel-login-fb-5.png" width="850"><br/><br/>
+ 
+            <p class="lead">Once we are done with the form. Now navigate to <b style="color: red;">facebook login > setting</b> which you can find in side navigation bar to set the redirect URI. <b>Set redirect URI: https://yourdomainname.com/auth/facebook/callback</b></p>
+
+            <p class="lead"><b>NOTE</b>: As of October 6, 2018, you won’t be able to use Facebook Login if your site isn’t HTTPS, or you will run into errors when trying to authenticate users.</p>
+
+            <img src="img/social/laravel-login-fb-6.png" width="850"><br/><br/>
+
+            <p class="lead">and click on save changes. now click on setting > basic to get the <b style="color: red;">App ID</b> and <b style="color: red;">Secret key</b>.</p>
+
+            <img src="img/social/laravel-login-fb-7.png" width="850"><br/><br/>
+
+            <p class="lead">Now we get the <b style="color: red;">Facebook App ID</b> and <b style="color: red;">Secret Key</b>. Now you have to set Client ID and Secret in admin</p>
+
+            <img src="img/social/laravel-login-fb-8.png" width="850"><br/><br/>
+
+          </div>
+        </div>    
+      </div>
+      <hr/>  
+      <div id="payment_conf">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Payment Configuration</h3>              
+            
+             <p class="lead">Now you need to setup the PayPal, Stripe, Razorpay and Paystack key. go to Admin > Settings > Payment</p>
+       
+              <img src="img/payment.png" width="850"><br><br>
+
+              <b style="font-size: 24px;">PayPal</b><br/>
+              <b style="font-size: 20px;">Create or edit sandbox and live apps</b><br/><br/>
+              
+                <ol class="lead">
+                  <li>
+                  <p><strong>Log into Dashboard</strong> and type your PayPal account email and password.</p>
+                  </li>
+                  <li>
+                  <p>On the <strong>My Apps &amp; Credentials</strong> page, toggle to <strong>Live</strong> or <strong>Sandbox</strong> depending on which kind of app you want to create or edit:</p>
+                  <ul>
+                  <li>
+                  <p>To create an app, click <strong>Create App</strong> in the <strong>REST API apps</strong> section. Type a name for your app and click <strong>Create App</strong>.</p>
+                  </li>
+                  <li>
+                  <p>To edit an app, click a link for an app in the <strong>App Name</strong> column in the <strong>REST API apps</strong> section. To change the app's name, click the pencil icon, type a name for your app, and click <strong>Create App</strong>.</p>
+                  </li>
+                  </ul>
+                  </li>
+                  <li>
+                  <p>Copy and save your API credentials — the client ID and secret set on admin.</p>
+                    
+                  </li>
+                    
+                  </ol>
+                <p>For more info <a href="https://developer.paypal.com/docs/integration/admin/manage-apps/#create-or-edit-sandbox-and-live-apps" target="_blank">click here</a></p>
+              <hr>
+              <b style="font-size: 24px;">Braintree</b><br/>
+
+              <p style="font-size: 22px;"><strong>Merchant ID:</strong> To find your merchant ID.</p>
+              <ol class="lead">
+                <li>Log into either the <a target="_blank" href="https://www.braintreegateway.com/login" pa-marked="1">production Control Panel</a> or the <a target="_blank" href="https://sandbox.braintreegateway.com/login" pa-marked="1">sandbox Control Panel</a>, depending on which environment you are working in</li>
+                <li>Click on the gear icon in the top right corner</li>
+                <li>Click <strong>Business</strong> from the drop-down menu</li>
+                </ol>
+               
+               You'll find your merchant ID at the top of this page. <br><br>
+               <img src="img/braintree_1.png" width="850"><br><br>
+
+               <p style="font-size: 22px;"><strong>Merchant Accounts ID:</strong> To find your Merchant Accounts ID.</p>
+              <ol class="lead">
+                <li>Log into either the <a target="_blank" href="https://www.braintreegateway.com/login" pa-marked="1">production Control Panel</a> or the <a target="_blank" href="https://sandbox.braintreegateway.com/login" pa-marked="1">sandbox Control Panel</a>, depending on which environment you are working in</li>
+                <li>Click on the gear icon in the top right corner</li>
+                <li>Click <strong>Business</strong> from the drop-down menu</li>
+                <li>Scroll to the <strong>Merchant Accounts</strong> section</li>
+                </ol>
+               
+               From here you'll see the merchant account IDs in the first column for each account.<br><br>
+               <img src="img/braintree_2.png" width="850"><br><br>
+
+              <p style="font-size: 22px;"><strong>Public key:</strong> To find your Public key.</p>
+              <ol class="lead">
+                <li>Log into either the <a target="_blank" href="https://www.braintreegateway.com/login" pa-marked="1">production Control Panel</a> or the <a target="_blank" href="https://sandbox.braintreegateway.com/login" pa-marked="1">sandbox Control Panel</a>, depending on which environment you are working in</li>
+                <li>Click on the gear icon in the top right corner</li>
+                <li>Click <strong>API</strong> from the drop-down menu</li>
+                <li>Scroll to the <strong>API Keys</strong> section</li>
+                </ol>
+               
+               If no API keys appear, click the Generate New API Key button.<br><br>
+               <img src="img/braintree_3.png" width="850"><br><br>
+
+               <p style="font-size: 22px;"><strong>Private key:</strong> To find your private key.</p>
+                <ol class="lead">
+                <li>Log into either the <a target="_blank" href="https://www.braintreegateway.com/login" pa-marked="1">production Control Panel</a> or the <a target="_blank" href="https://sandbox.braintreegateway.com/login" pa-marked="1">sandbox Control Panel</a>, depending on which environment you are working in</li>
+                <li>Click on the gear icon in the top right corner</li>
+                <li>Click <strong>API</strong> from the drop-down menu</li>
+                <li>Scroll to the <strong>API Keys</strong> section</li>
+                <li>Click the <strong>View</strong> link located in the <em>Private Key</em> column</li>
+                </ol>
+               
+               Your private key will be revealed in the Private Key column on the next page.<br><br>
+               <img src="img/braintree_3.png" width="850"><br><br>
+
+             <hr>  
+             <b style="font-size: 24px;">Stripe</b><br/>
+              <b style="font-size: 20px;">Stripe Secret Key and Publishable key</b><br/><br/>   
+              <p class="lead">Users with Administrator permissions can access a Stripe account’s API keys by navigating to the Developers section of the Stripe dashboard and clicking on API Keys.</p>
+
+              <img src="img/stripe.png" width="850"><br><br>
+
+              <b style="font-size: 24px;">Razorpay</b><br/>
+              <b style="font-size: 20px;">API Keys</b><br/><br/>
+              <p class="lead">API key is a combination of the key_id and key_secret and is required to make any API request to Razorpay. You also have to implement the API key in your code as part of your integration process.</p>  
+              <ol class="lead">
+                <li>Log into your <a href="https://dashboard.razorpay.com/" target="_blank">Dashboard</a> with appropriate credentials.</li>
+                <li>Select the mode (<strong>Test</strong> or <strong>Live</strong>) for which you want to generate the API key.
+                <blockquote info="">
+                <strong>Note</strong>:
+                <br>
+                You have to generate separate API Keys for the test and live modes. No real money is used in test mode.
+                </blockquote></li>
+                <li>Navigate to <strong>Settings</strong> → <strong>API Keys</strong> → <strong>Generate Key</strong> to generate key for the selected mode.<br></li>
+              </ol> 
+              <p class="lead">The Key Id and Key Secret appear in a pop-out window as shown below:</p>
+
+              <img src="img/razorpay.gif" width="850"><br><br>
+
+              <b style="font-size: 24px;">Paystack</b><br/>
+              <b style="font-size: 20px;">How to get your Test and Live API Keys</b><br/><br/>
+
+              <p class="lead">In order to get your Test API Keys, simply go to your dashboard settings and click on the API Keys & Webhooks tab.  Scroll to where it says "API Configuration - Test Mode", here you will find your Test Secret Key and Test Public Key as captured below:</p>
+              <img src="img/paystack1.png" width="850"><br><br>
+
+              <p class="lead">After you're done testing and are satisfied with your integration, you'll need your Live API Keys to be able to receive real money from your customers.</p><br><br>
+
+              <img src="img/paystack2.png" width="850"><br><br>
+
+              <b style="font-size: 20px;">Callback URL</b>
+              <p class="lead">The callback URL is a web address of where you want your customers to be redirected to after a successful payment is made. Set Callback URL: https://yourdomainname.com/payment/callback</p>
+              <img src="img/paystack3.png" width="850"><br><br>
+
+          </div>
+        </div>
+      </div>
+       <hr/>
+      <div id="cronjob_conf">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Cronjob/Scheduled Configuration</h3>             
+             
+             
+             <p class="lead">Set up a cron job on your server like such:</p>
+       
+             <pre spellcheck="false" class="ql-syntax">* * * * * <span class="hljs-regexp">/usr/bin/php /home/my_user/my</span>_app/artisan <span class="hljs-symbol">schedule:</span>run <span class="hljs-meta">&gt;&gt; </span>/dev/null <span class="hljs-number">2</span>&gt;&amp;<span class="hljs-number">1</span></pre>  
+             
+             <p>The above is telling your cron to run once every minute. So, once every minutes, it runs your scheduled task.<br/> You can change this frequency to Twice Per Day(0 0,12 * * *) or etc.</p>
+
+             <b style="font-size: 20px;">Note: This step is only for email notification when any user subscription expired. If you have any issue then contact your hosting provider because cron job path different on different hosting.</b>  
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <hr/>
+      <div id="app_conf">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Android App Configuration</h3>              
+             
+             <b style="font-size: 20px;">App Verify Purchase</b>  
+             <p class="lead">Verify purchase required for app API and after verify you can access other app settings page.</p>
+       
+              <img src="img/app_verify.png" width="850">
+               
+          </div>
+        </div>
+      </div>
+      <hr/>  
+
+      <div id="files">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>File Structure</h3> 
+            <p class="lead"> .env and .htaccess configuration files are located here</p>
+            <code>video_script</code><br/>
+
+            <img src="img/files1.png" width="850">
+
+            <p class="lead">All layout files are located here</p>
+            <code>
+              video_script\resources\views
+            </code>
+            <img src="img/files2.png" width="850">
+
+            <p class="lead">All language files are located here <b>(Translation file words.php)</b></p>
+            <code>
+              video_script\resources\lang
+            </code>
+            <img src="img/lang.png" width="850">
+       
+          </div>
+        </div>
+      </div>
+      <hr/>
+	  <div id="faq">
+        <div class="row">
+          <div class="col-md-12">
+          	<h3>Frequently Asked Questions (FAQ)</h3> 
+             <h4>Can I run on My Server?</h4>
+		      <p>If you have all requirements on your server then yes you can run!. Please check requirements <a href="#installation">Installation</a> tab</p>
+
+		    <h4>Can I use this on more than one domain?</h4>
+		      <p>With purchase license you have one domain permission. You need to get another licenses for your another domians if you want to use on more than one domain.</p>
+
+		      <h4>Issue: Parse error: syntax error, unexpected 'class' (T_CLASS), expecting &gt; identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in</h4>
+		      <p>This means you do not have PHP 7.4.0 or newer version. Script needs PHP 7.4.0 or newer version.</p>
+
+		      <h4>Issue: I'm Getting 500 Server Error</h4>
+		      <p>It could be anything. Its a server error. Could be missing files Or missing server configuration.
+		        It may be permission issue too. If so please try to set 777 permission for storage and bootstrap folder and all folders and files on it.</p>
+             
+          </div>
+        </div>
+      </div>
+	  
+	  <div id="license">
+        <div class="row">
+          <div class="col-md-12">
+          	<h3>License</h3> 
+             <h4>Regular License</h4>
+		          <p>Use, by you or one client, in a single end product which end users <strong>are not</strong> charged for.</p>		 
+		    
+             
+          </div>
+        </div>
+      </div>
+      <div id="support">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Support</h3> 
+             <div>
+                <b>We provide support through Skype, Email or WhatsApp.</b>
+                <p><strong>Skype:</strong> support.viaviweb OR viaviwebtech</p>
+                <p><strong>Email:</strong> info@viaviweb.com OR viaviwebtech@gmail.com</p>
+                <p><strong>WhatsApp:</strong> +91 92277 77522</p>
+                <b class="heading_3">Working Days:</b>
+                <p>Monday to Friday</p>
+                <b class="heading_3">Business Hours:</b>
+                <p>10:00 AM to 6:00 PM - <strong>Time Zone:</strong> GMT +5:30 </p>
+            </div>    
+        
+             
+          </div>
+        </div>
+      </div>		 
+    </div>
+    <!--End of inner-content--> 
+  </div>
+</div>
+</div>
+
+<!-- JavaScript --> 
+<script type='text/JavaScript' src="js/jquery-1.11.1.min.js"></script> 
+<script type='text/JavaScript' src="js/bootstrap.min.js"></script> 
+<script type='text/JavaScript' src="js/common.js"></script> 
+
+<!-- Custom JavaScript for the Menu Toggle --> 
+<script>
+    $(document).ready(function() {
+        DocMaster.treeMenu();
+        DocMaster.sideToggle();
+        DocMaster.scrollToElement();
+    });
+    </script>
+</body>
+</html>
